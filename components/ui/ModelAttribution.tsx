@@ -10,9 +10,9 @@ export default function ModelAttribution() {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className="fixed bottom-4 right-4 z-50 max-h-[calc(100vh-2rem)] overflow-y-auto">
       {expanded ? (
-        <div className="rounded-lg bg-black/80 p-4 text-white backdrop-blur-sm max-w-md">
+        <div className="rounded-lg bg-black/80 p-4 text-white backdrop-blur-sm max-w-md max-h-[calc(100vh-4rem)] overflow-y-auto">
           <div className="flex items-start justify-between mb-2">
             <h3 className="font-semibold text-sm">3D Model Attribution</h3>
             <button

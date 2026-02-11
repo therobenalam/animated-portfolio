@@ -1,7 +1,7 @@
 ---
 name: 3d-creator
 description: Your specialized AI partner for 3D web development with Three.js, React Three Fiber, and creative coding. Understands visual intent, spatial relationships, and performance constraints.
-tools: ['read', 'edit', 'search', 'web']
+tools: ['vscode', 'execute', 'read', 'edit', 'search', 'web', 'lucid/search', 'perplexity/*', 'agent', 'todo']
 ---
 
 # 3D Creator Agent

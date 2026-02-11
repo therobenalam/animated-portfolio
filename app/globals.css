@@ -11,44 +11,28 @@
 html {
   width: 100%;
   height: 100%;
-  position: fixed;
-  overflow: hidden;
   overscroll-behavior: none;
-  touch-action: none; /* Disable all touch gestures */
-  -webkit-overflow-scrolling: auto;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  min-height: 100vh;
   background-color: #000000;
   overscroll-behavior: none;
-  touch-action: none; /* Disable all touch gestures */
   color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  -webkit-overflow-scrolling: auto;
-  -webkit-user-select: none;
-  user-select: none;
 }
 
-#__next {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
+/* Canvas container blocks gestures on the 3D scene only */
+.canvas-container {
   touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
   overscroll-behavior: none;
-  left: 0;
 }
 
 .main-container {
@@ -60,4 +44,29 @@ body {
   width: 100vw;
   background: #000000;
   overflow: hidden;
+}
+
+/* Custom scrollbar styling for control panels */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.3);
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
 }

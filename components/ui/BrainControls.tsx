@@ -75,7 +75,7 @@ export default function BrainControls({
   ] as const;
 
   return (
-    <div className="fixed top-4 left-4 z-50">
+    <div className="fixed bottom-4 left-4 z-50 max-h-[calc(100vh-2rem)] overflow-y-auto">
       {isExpanded ? (
         <div className="rounded-lg bg-black/90 p-4 text-white backdrop-blur-md border border-white/10 shadow-2xl max-w-xs">
           {/* Header */}
